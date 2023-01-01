@@ -27,8 +27,22 @@ Based on [tkat0's work](https://tkat0.github.io/posts/how-to-create-a-react-app-
 
 9. From the same folder location, you can now add the wasm with NPM:
     ```npm install ./wasm-lib/pkg```
-    Note: Again, wasm-lib is name of Rust lib folder.  Use that.
+    Note: Again, wasm-lib is name of Rust lib folder.  Use the name in this template.
 
 10. See ```index.js``` for the code needed to use Rust function.
 
 That should work.
+
+## If cloning into this template
+
+1. Do ```npm install``` from root of app.
+
+2. Do ```cargo test``` from root of Rust lib.
+
+3. Do ```npm run build:wasm``` from root of React app.
+
+4. Do ```npm install ./davelib/pkg``` from root of React app.
+
+Everything should function.
+
+### NOTE: Remember that if you change folder or file names, it will affect the commands given to compile or build this template.
