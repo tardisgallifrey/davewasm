@@ -39,6 +39,8 @@ That should work.
 
 2. Do ```cargo test``` from root of Rust lib.
 
+2a. Run ```cargo install wasm-pack``` from root of Rust Lib.
+
 3. Do ```npm run build:wasm``` from root of React app.
 
 4. Do ```npm install ./davelib/pkg``` from root of React app.
