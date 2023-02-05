@@ -17,6 +17,9 @@ Based on [tkat0's work](https://tkat0.github.io/posts/how-to-create-a-react-app-
 
 6. Install wasm-pack with ```cargo install wasm-pack```
 
+###Notes on wasm-pack:
+Installing wasm-pack can be a pain.  A rust module called openssl-sys does a lot of heavy lifting in this install.  You need a good running install of openssl on your machine, and even then, problems occur.  They vary from OS to OS.  On Windows, I had to install libssl-dev and possibly openssl-dev.  On Fedora, I had to install a Perl module called FindBin.  All I can say is: read the errors produced carefully and see if you can tell what it is missing.  Also, use StackOverflow.com.
+
 7.  Add the following line to react app package.json:
     ```"build:wasm": "cd wasm-lib && wasm-pack build --target web --out-dir pkg",```
     Note: If you use a different folder name for the Rust lib, change wasm-lib.
